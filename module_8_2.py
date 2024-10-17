@@ -3,11 +3,11 @@ def personal_sum(numbers):
     incorrect_data = 0
     for i in numbers:
         try:
-            result +=int(i)
+            result += i
         except(TypeError):
             print(f'Некорректный тип данных для подсчёта суммы - {i}')
             incorrect_data += 1
-        return (result, incorrect_data)
+    return (result, incorrect_data)
 
 def calculate_average(numbers):
     if not isinstance(numbers, (tuple, list)):
